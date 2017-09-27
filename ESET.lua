@@ -440,9 +440,8 @@ end
 function SetTime()
   run_cmd("sudo timedatectl set-timezone \"Asia/Tehran\"")
   print("\027[" .. color.black[1] .. ";" .. color.green[2] .. "m\n>>> Time Server Has Been Set To Time Tehran <<<\027[00m")
-end
-end
-end
+    end
+  end
 end
 
       elseif not LastVer then
