@@ -15520,4 +15520,3 @@ If you *want* to get the bot phone number , send command *Botphone* .]], 1, "md"
       else
       end
     end
-end
