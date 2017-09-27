@@ -1826,32 +1826,6 @@ http.request("http://tabchi.com/ecsbot/api/update.php?bot=" .. (bot_id or 0) .. 
 database:set("bot:Uptime", os.time())
 function tdcli_update_callback(data)
 -- fail 10908
-unluac.decompile.expression.FunctionCall
-  local our_id = database:get("Our_ID") or 0
-  local api_id = database:get("Bot:Api_ID") or 0
-  if data.ID == "UpdateNewMessage" then
-    local msg = data.message_
-    local d = data.disable_notification_
-    local chat = chats[msg.chat_id_]
-    database:sadd("groups:users" .. msg.chat_id_, msg.sender_user_id_)
-    if msg.date_ < os.time() - 40 then
-      print("\027[" .. color.white[1] .. ";" .. color.magenta[2] .. "m>>> OLD MSG <<<\027[00m")
-      return false
-    end
-    if not database:get("Set_Our_ID") then
-      tdcli_function({ID = "GetMe"}, BotInfo, nil)
-    end
-    if tonumber(msg.sender_user_id_) == tonumber(api_id) then
-      print("\027[" .. color.magenta[1] .. ";" .. color.black[2] .. "m>>> MSG From Api Bot <<<\027[00m")
-      return false
-    end
-    if run == "False" or bot_id == 0 or bot_owner == 0 then
-      print("\027[" .. color.red[1] .. ";" .. color.black[2] .. "m>>>>>>> [ Config.Erorr ] : Configuration Information Is Incomplete !\027[00m")
-      return false
-    end
-    if not database:get("OK" .. bot_id) then
-      print("\027[" .. color.white[1] .. ";" .. color.red[2] .. "m>>>>>>> [ License.Erorr ] : License Not Active!\nTell To @EndlessLine For Active Them !\027[00m")
-      return false
     end
     if not database:get("Open:Chats") then
       function OpenChats(extra, result)
