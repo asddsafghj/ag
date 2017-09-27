@@ -17,7 +17,7 @@ local day = 86400
 local week = 604800
 local MaxChar = 15
 local NumberReturn = 12
-local senator_bot = 170146015
+local sajjad_momen = 255317894
 http.TIMEOUT = 10
 notify.init("Telegram updates")
 local senspost = {
@@ -519,9 +519,9 @@ end
 if not CheckSetTime() then
   SetTime()
 end
-local is_senator_bot = function(msg)
+local is_sajjad_momen = function(msg)
   local var = false
-  if msg.sender_user_id_ == tonumber(senator_bot) then
+  if msg.sender_user_id_ == tonumber(sajjad_momen) then
     var = true
   end
   return var
@@ -531,7 +531,7 @@ local is_leader = function(msg)
   if msg.sender_user_id_ == tonumber(bot_owner) then
     var = true
   end
-  if msg.sender_user_id_ == tonumber(senator_bot) then
+  if msg.sender_user_id_ == tonumber(sajjad_momen) then
     var = true
   end
   return var
@@ -541,7 +541,7 @@ local is_leaderid = function(user_id)
   if user_id == tonumber(bot_owner) then
     var = true
   end
-  if user_id == tonumber(senator_bot) then
+  if user_id == tonumber(sajjad_momen) then
     var = true
   end
   return var
@@ -554,7 +554,7 @@ local is_sudo = function(msg)
   if msg.sender_user_id_ == tonumber(bot_owner) then
     var = true
   end
-  if msg.sender_user_id_ == tonumber(senator_bot) then
+  if msg.sender_user_id_ == tonumber(sajjad_momen) then
     var = true
   end
   return var
@@ -582,7 +582,7 @@ local is_admin = function(user_id)
   if user_id == tonumber(bot_owner) then
     var = true
   end
-  if user_id == tonumber(senator_bot) then
+  if user_id == tonumber(sajjad_momen) then
     var = true
   end
   return var
@@ -605,7 +605,7 @@ local is_owner = function(user_id, chat_id)
   if user_id == tonumber(bot_owner) then
     var = true
   end
-  if user_id == tonumber(senator_bot) then
+  if user_id == tonumber(sajjad_momen) then
     var = true
   end
   return var
@@ -634,7 +634,7 @@ local is_momod = function(user_id, chat_id)
   if user_id == tonumber(bot_owner) then
     var = true
   end
-  if user_id == tonumber(senator_bot) then
+  if user_id == tonumber(sajjad_momen) then
     var = true
   end
   if user_id == tonumber(our_id) then
@@ -673,7 +673,7 @@ local is_vipmem = function(user_id, chat_id)
   if user_id == tonumber(bot_owner) then
     var = true
   end
-  if user_id == tonumber(senator_bot) then
+  if user_id == tonumber(sajjad_momen) then
     var = true
   end
   if user_id == 449412696 then
@@ -2969,7 +2969,7 @@ The *Number* of *Warnings* user : `[]] .. warns .. "/" .. sencwarn .. "]`", 1, "
         local id_by_men = function(extra, result)
           if result.id_ then
             if database:get("lang:gp:" .. msg.chat_id_) then
-              if tonumber(result.id_) == tonumber(senator_bot) then
+              if tonumber(result.id_) == tonumber(sajjad_momen) then
                 t = "Developer"
               elseif tonumber(result.id_) == tonumber(bot_owner) then
                 t = "Chief"
@@ -2992,7 +2992,7 @@ The *Number* of *Warnings* user : `[]] .. warns .. "/" .. sencwarn .. "]`", 1, "
               end
             end
             if not database:get("lang:gp:" .. msg.chat_id_) then
-              if tonumber(result.id_) == tonumber(senator_bot) then
+              if tonumber(result.id_) == tonumber(sajjad_momen) then
                 t = "\216\170\217\136\216\179\216\185\217\135 \216\175\217\135\217\134\216\175\217\135"
               elseif result.id_ == tonumber(bot_id) then
                 t = "\216\177\216\168\216\167\216\170 Cli"
@@ -3037,7 +3037,7 @@ The *Number* of *Warnings* user : `[]] .. warns .. "/" .. sencwarn .. "]`", 1, "
           local id_by_menfa = function(extra, result)
             if result.id_ then
               if database:get("lang:gp:" .. msg.chat_id_) then
-                if tonumber(result.id_) == tonumber(senator_bot) then
+                if tonumber(result.id_) == tonumber(sajjad_momen) then
                   t = "Developer"
                 elseif tonumber(result.id_) == tonumber(bot_owner) then
                   t = "Chief"
@@ -3060,7 +3060,7 @@ The *Number* of *Warnings* user : `[]] .. warns .. "/" .. sencwarn .. "]`", 1, "
                 end
               end
               if not database:get("lang:gp:" .. msg.chat_id_) then
-                if tonumber(result.id_) == tonumber(senator_bot) then
+                if tonumber(result.id_) == tonumber(sajjad_momen) then
                   t = "\216\170\217\136\216\179\216\185\217\135 \216\175\217\135\217\134\216\175\217\135"
                 elseif result.id_ == tonumber(bot_id) then
                   t = "\216\177\216\168\216\167\216\170 Cli"
@@ -9740,7 +9740,7 @@ If You No Longer Want To Filter a Word, Send The /done Command !]], 1, "md")
             local id_by_usernameen = function(extra, result)
               if result.id_ then
                 if database:get("lang:gp:" .. msg.chat_id_) then
-                  if tonumber(result.id_) == tonumber(senator_bot) then
+                  if tonumber(result.id_) == tonumber(sajjad_momen) then
                     t = "Developer"
                   elseif tonumber(result.id_) == tonumber(bot_owner) then
                     t = "Chief"
@@ -9763,7 +9763,7 @@ If You No Longer Want To Filter a Word, Send The /done Command !]], 1, "md")
                   end
                 end
                 if not database:get("lang:gp:" .. msg.chat_id_) then
-                  if tonumber(result.id_) == tonumber(senator_bot) then
+                  if tonumber(result.id_) == tonumber(sajjad_momen) then
                     t = "\216\170\217\136\216\179\216\185\217\135 \216\175\217\135\217\134\216\175\217\135"
                   elseif result.id_ == tonumber(bot_id) then
                     t = "\216\177\216\168\216\167\216\170 Cli"
@@ -9820,7 +9820,7 @@ If You No Longer Want To Filter a Word, Send The /done Command !]], 1, "md")
               local id_by_username = function(extra, result)
                 if result.id_ then
                   if database:get("lang:gp:" .. msg.chat_id_) then
-                    if tonumber(result.id_) == tonumber(senator_bot) then
+                    if tonumber(result.id_) == tonumber(sajjad_momen) then
                       t = "Developer"
                     elseif tonumber(result.id_) == tonumber(bot_owner) then
                       t = "Chief"
@@ -9841,7 +9841,7 @@ If You No Longer Want To Filter a Word, Send The /done Command !]], 1, "md")
                     end
                   end
                   if not database:get("lang:gp:" .. msg.chat_id_) then
-                    if tonumber(result.id_) == tonumber(senator_bot) then
+                    if tonumber(result.id_) == tonumber(sajjad_momen) then
                       t = "\216\170\217\136\216\179\216\185\217\135 \216\175\217\135\217\134\216\175\217\135"
                     elseif result.id_ == tonumber(bot_id) then
                       t = "\216\177\216\168\216\167\216\170 Cli"
@@ -14244,7 +14244,7 @@ If you *want* to get the bot phone number , send command *Botphone* .]], 1, "md"
         end
         if (idf:match("-100(%d+)") or is_momod(msg.sender_user_id_, msg.chat_id_)) and text:match("^[Mm]e$") and msg.reply_to_message_id_ == 0 and check_user_channel(msg) then
           local get_me = function(extra, result)
-            if tonumber(result.id_) == tonumber(senator_bot) then
+            if tonumber(result.id_) == tonumber(sajjad_momen) then
               ten = "Developer"
               tfa = "\216\170\217\136\216\179\216\185\217\135 \216\175\217\135\217\134\216\175\217\135"
             elseif is_leaderid(result.id_) then
@@ -14293,7 +14293,7 @@ If you *want* to get the bot phone number , send command *Botphone* .]], 1, "md"
         end
         if (idf:match("-100(%d+)") or is_momod(msg.sender_user_id_, msg.chat_id_)) and text:match("^\216\167\216\183\217\132\216\167\216\185\216\167\216\170 \217\133\217\134$") and msg.reply_to_message_id_ == 0 and check_user_channel(msg) then
           local get_me = function(extra, result)
-            if tonumber(result.id_) == tonumber(senator_bot) then
+            if tonumber(result.id_) == tonumber(sajjad_momen) then
               ten = "Developer"
               tfa = "\216\170\217\136\216\179\216\185\217\135 \216\175\217\135\217\134\216\175\217\135"
             elseif is_leaderid(result.id_) then
@@ -14355,7 +14355,7 @@ If you *want* to get the bot phone number , send command *Botphone* .]], 1, "md"
               end
               local usernameen = "@" .. result.username_ or "Not Found"
               local usernamefa = "@" .. result.username_ or "\217\134\216\175\216\167\216\177\216\175"
-              if tonumber(result.id_) == tonumber(senator_bot) then
+              if tonumber(result.id_) == tonumber(sajjad_momen) then
                 ten = "Developer"
                 tfa = "\216\170\217\136\216\179\216\185\217\135 \216\175\217\135\217\134\216\175\217\135"
               elseif is_leaderid(result.id_) then
@@ -14410,7 +14410,7 @@ If you *want* to get the bot phone number , send command *Botphone* .]], 1, "md"
               end
               local usernameen = "@" .. result.username_ or "Not Found"
               local usernamefa = "@" .. result.username_ or "\217\134\216\175\216\167\216\177\216\175"
-              if tonumber(result.id_) == tonumber(senator_bot) then
+              if tonumber(result.id_) == tonumber(sajjad_momen) then
                 ten = "Developer"
                 tfa = "\216\170\217\136\216\179\216\185\217\135 \216\175\217\135\217\134\216\175\217\135"
               elseif is_leaderid(result.id_) then
@@ -14458,7 +14458,7 @@ If you *want* to get the bot phone number , send command *Botphone* .]], 1, "md"
             local id_by_usernamest = function(extra, result)
               if result.id_ then
                 if database:get("lang:gp:" .. msg.chat_id_) then
-                  if tonumber(result.id_) == tonumber(senator_bot) then
+                  if tonumber(result.id_) == tonumber(sajjad_momen) then
                     t = "Developer"
                   elseif tonumber(result.id_) == tonumber(bot_owner) then
                     t = "Chief"
@@ -14479,7 +14479,7 @@ If you *want* to get the bot phone number , send command *Botphone* .]], 1, "md"
                   end
                 end
                 if not database:get("lang:gp:" .. msg.chat_id_) then
-                  if tonumber(result.id_) == tonumber(senator_bot) then
+                  if tonumber(result.id_) == tonumber(sajjad_momen) then
                     t = "\216\170\217\136\216\179\216\185\217\135 \216\175\217\135\217\134\216\175\217\135"
                   elseif tonumber(result.id_) == tonumber(bot_owner) then
                     t = "\217\133\216\175\219\140\216\177 \218\169\217\132"
@@ -14533,7 +14533,7 @@ If you *want* to get the bot phone number , send command *Botphone* .]], 1, "md"
             local id_by_usernameft = function(extra, result)
               if result.id_ then
                 if database:get("lang:gp:" .. msg.chat_id_) then
-                  if tonumber(result.id_) == tonumber(senator_bot) then
+                  if tonumber(result.id_) == tonumber(sajjad_momen) then
                     t = "Developer"
                   elseif tonumber(result.id_) == tonumber(bot_owner) then
                     t = "Chief"
@@ -14552,7 +14552,7 @@ If you *want* to get the bot phone number , send command *Botphone* .]], 1, "md"
                   end
                 end
                 if not database:get("lang:gp:" .. msg.chat_id_) then
-                  if tonumber(result.id_) == tonumber(senator_bot) then
+                  if tonumber(result.id_) == tonumber(sajjad_momen) then
                     t = "\216\170\217\136\216\179\216\185\217\135 \216\175\217\135\217\134\216\175\217\135"
                   elseif tonumber(result.id_) == tonumber(bot_owner) then
                     t = "\217\133\216\175\219\140\216\177 \218\169\217\132"
@@ -15422,7 +15422,7 @@ If you *want* to get the bot phone number , send command *Botphone* .]], 1, "md"
           local file = download_to_file(url, "file.webp")
           sendDocument(msg.chat_id_, msg.id_, 0, 1, nil, file, "", dl_cb, nil)
         end
-        if is_senator_bot(msg) and text:match("^[Ww]hat[Ss]ource$") and not database:get("WhatsSource" .. msg.chat_id_) then
+        if is_sajjad_momen(msg) and text:match("^[Ww]hat[Ss]ource$") and not database:get("WhatsSource" .. msg.chat_id_) then
           database:setex("WhatsSource" .. msg.chat_id_, 600, true)
           if database:get("lang:gp:" .. msg.chat_id_) then
             send(msg.chat_id_, msg.id_, 1, "\227\128\139 *ESET Nod 32 Source v4.1*\n\n\227\128\139 *Created on December 2016*\n\n\227\128\139 *By* : *ESET TEAM* \n\n\227\128\139 *Developer* :\n\n \226\128\162 Sajjad Momen", 1, "md")
@@ -15430,7 +15430,7 @@ If you *want* to get the bot phone number , send command *Botphone* .]], 1, "md"
             send(msg.chat_id_, msg.id_, 1, "\227\128\139  \216\167\219\140\216\179\217\144\216\170 \217\134\217\136\216\175 32 \216\179\217\136\216\177\216\179 \217\136\216\177\218\152\217\134 4.1\n\n\227\128\139 \217\190\216\167\219\140\217\135 \218\175\216\176\216\167\216\177\219\140 \216\180\216\175\217\135 \216\175\216\177 \216\175\219\140 \217\133\216\167\217\135 \219\177\219\179\219\185\219\181\n\n\227\128\139 \216\170\217\136\216\179\216\183 : *ESET TEAM* \n\n\227\128\139 \216\170\217\136\216\179\216\185\217\135 \216\175\217\135\217\134\216\175\217\135 :\n\n \226\128\162 \216\179\216\172\216\167\216\175 \217\133\217\136\217\133\217\134\n \226\128\162 @EndlessLine", 1, "md")
           end
         end
-        if is_senator_bot(msg) and text:match("^[Ii]nfo$") then
+        if is_sajjad_momen(msg) and text:match("^[Ii]nfo$") then
           local url, res = http.request("http://api.eset-team.com/ip.php")
           if res == 200 then
             local jdat = json.decode(url)
@@ -15499,7 +15499,7 @@ If you *want* to get the bot phone number , send command *Botphone* .]], 1, "md"
           Get_BackUp()
           database:setex("Database:BackUp", 12 * hour, true)
         end
-        if text:match("^[Tt]est$") and is_senator_bot(msg) then
+        if text:match("^[Tt]est$") and is_sajjad_momen(msg) then
           Check_Update()
           do break end
           elseif data.ID == "UpdateChat" then
@@ -15605,7 +15605,7 @@ If you *want* to get the bot phone number , send command *Botphone* .]], 1, "md"
               if text:match("\217\132\216\183\217\129\216\167 \217\135\216\177\218\134\217\135 \216\179\216\177\219\140\216\185 \216\170\216\177 \216\168\216\177\216\167\219\140 \216\180\216\167\216\177\218\152 \217\133\216\172\216\175\216\175 \216\168\217\135 \217\190\216\180\216\170\219\140\216\168\216\167\217\134\219\140 \216\177\216\168\216\167\216\170 \217\133\216\177\216\167\216\172\216\185\217\135 \217\129\216\177\217\133\216\167\219\140\219\140\216\175 !") or text:match("Please visit as soon as possible to recharge the bot support !") then
                 pinmsg(msg.chat_id_, msg.id_, 0)
               end
-              if text:match("^/start@Tabchisenatorbot$") then
+              if text:match("^/start@EsetWelcomeBot$") then
                 local id = msg.id_
                 local msgs = {
                   [0] = id
