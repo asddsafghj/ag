@@ -441,16 +441,6 @@ function SetTime()
   run_cmd("sudo timedatectl set-timezone \"Asia/Tehran\"")
   print("\027[" .. color.black[1] .. ";" .. color.green[2] .. "m\n>>> Time Server Has Been Set To Time Tehran <<<\027[00m")
     end
-  end
-end
-
-      elseif not LastVer then
-        print("\027[" .. color.black[1] .. ";" .. color.yellow[2] .. "m\n>>>>>>> Starting Update <<<<<<<\n\027[00m")
-        Updating()
-      end
-    end
-  end
-end
 local getindex = function(t, id)
   for i, v in pairs(t) do
     if v == id then
